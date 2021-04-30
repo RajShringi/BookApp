@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>BOOKAPP</title>
+</head>
+<body>
+    <div class="container" id="wrapper">
+        <div class="featured-section" id="page-banner">
+            <h1 class="app-title">Bookorama</h1>
+            <p class="app-sub-title">Books for ninjas</p>
+            <form id="search-books">
+                <input class = "search-book-field" type="text" placeholder="SEARCH BOOKS...">
+            </form>
+        </div>
+
+        <div class="library" id="book-list">
+            <h2 class="library-heading">Books to Read</h2>
+
+            <ul>
+                <li class="book">
+                    <p class="book-name">Name of the Wind</p>
+                    <input type="submit" value = "delete" class="delete-btn">
+                </li>
+
+                <li class="book">
+                    <p class="book-name">The Wise Man's Fear</p>
+                    <input type="submit" value = "delete" class="delete-btn">
+                </li>
+
+                <li class="book">
+                    <p class="book-name">The Master and the Margarita</p>
+                    <input type="submit" value = "delete" class="delete-btn">
+                </li>
+            </ul>
+        </div>
+
+        <div class="add-books">
+            <form id="add-book">
+                <div>
+                    <input type="checkbox" id='hide'>
+                    <label for="hide">Hide all books</label>
+                </div>
+                <input type="text" placeholder="ADD A BOOK" class="add-book-field">
+                <input type="submit" value="Add" class="add-btn">
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
